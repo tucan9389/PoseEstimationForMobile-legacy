@@ -37,13 +37,13 @@ The respository contains:
 
 Below GIF is catch on Mi Mix2s (~60 FPS)
 
-![image](https://github.com/edvardHua/PoseEstimationForMobile/raw/master/images/demo.gif)
+![image](images/demo.gif)
 
 You can download the apk as below to test on your device.
 
 | Using Mace (Support GPU) | Using TFlite (Only CPU) |
 | --- | --- |
-| [PoseEstimation-Mace.apk](https://raw.githubusercontent.com/edvardHua/PoseEstimationForMobile/master/release/PoseEstimation-Mace.apk) | [PoseEstimation-TFlite.apk](https://raw.githubusercontent.com/edvardHua/PoseEstimationForMobile/master/release/PoseEstimation-TFlite.apk) |
+| [PoseEstimation-Mace.apk](release/PoseEstimation-Mace.apk) | [PoseEstimation-TFlite.apk](release/PoseEstimation-TFlite.apk) |
 
 
 > Issue and PR are welcome when you come across any problem.
@@ -85,7 +85,7 @@ I transfer the annotation into COCO format for using the data augument code from
 
 In training procedure, we use `cfg` file on `experiments` folder for passing the hyper-parameter.
 
-Below is the content of [mv2_cpm.cfg](https://github.com/edvardHua/PoseEstimationForMobile/blob/master/training/experiments/mv2_cpm.cfg).
+Below is the content of [mv2_cpm.cfg](training/experiments/mv2_cpm.cfg).
 
 ```bash
 [Train]
@@ -204,7 +204,7 @@ python tools/converter.py convert --config=<PoseEstimationForMobilePath>/release
 
 Then follow the instruction of [mace-0.9 documentation](https://mace.readthedocs.io/en/v0.9.0/) to integrate into android.
 
-For how to invoke the model and parsing output, you can check the [android source code](https://github.com/edvardHua/PoseEstimationForMobile/tree/master/android_demo) i provided.
+For how to invoke the model and parsing output, you can check the [android source code](android_demo) i provided.
 
 The benchmark of some socs for average inference time are shown as follow.
 
@@ -358,4 +358,4 @@ Then, follow the instruction on [PoseEstimation-CoreML](https://github.com/tucan
 
 ***
 
-[Apache License 2.0](https://github.com/edvardHua/PoseEstimationForMobile/blob/master/LICENSE)
+[Apache License 2.0](LICENSE)
