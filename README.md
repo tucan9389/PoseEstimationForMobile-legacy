@@ -160,7 +160,7 @@ python3 src/train.py experiments/mv2_cpm.cfg
 
 After 12 hour training, the model is almost coverage on 3 Nvidia 1080Ti graphics cards, below is the corresponding plot on tensorboard.
 
-![image](https://github.com/edvardHua/PoseEstimationForMobile/raw/master/images/loss_lastlayer_heat.png)
+![image](images/loss_lastlayer_heat.png)
 
 ### Bechmark (PCKh)
 
